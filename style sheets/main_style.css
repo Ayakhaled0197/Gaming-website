@@ -234,7 +234,7 @@ footer .getapp-btn img{
     left :25%;
 }
 .sec-no5 ul li{
-    list-style-image: url(images/astrik_rwd770.svg) !important;
+    list-style-image: url(/images/astrik_rwd770.svg) !important;
     margin-bottom: 2.5rem !important;
 }
 .accordion-button::after{
@@ -311,7 +311,7 @@ footer .getapp-btn img{
     height: 50px !important;
 }
 .sec-no5 ul li{
-    list-style-image: url(images/astrik_rwd770.svg) !important;
+    list-style-image: url(/images/astrik_rwd770.svg) !important;
     margin-bottom: 2.9rem !important;
 }
 .accordion-button::after{
@@ -428,7 +428,7 @@ footer .getapp-btn img{
     height: 40px !important;
 }
 .sec-no5 ul li{
-    list-style-image: url(images/astrik_rwd770.svg) !important;
+    list-style-image: url(/images/astrik_rwd770.svg) !important;
     margin-bottom: 3rem !important;
 }
 .accordion-button::after{
@@ -628,7 +628,7 @@ nav .nav-elements ul{
 }
 .offcanvas-header .btn-close {
     border: 1px solid var(--jdgm-star-color);
-    background: url(images/close_btn.svg);
+    background: url(/images/close_btn.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1292,7 +1292,7 @@ border-bottom: 1px solid #ffffff46;
 }
 .sec-no5 li {
     margin-bottom: 1rem;
-    list-style-image: url(images/astrik.svg);
+    list-style-image: url(/images/astrik.svg);
     color: var(--transparent-white);
     font-weight: 400;
     
@@ -1311,7 +1311,7 @@ border-bottom: 1px solid #ffffff46;
 .sec-no7 {
     display: grid;
     grid-template-columns: 55% 45%;
-    background-image: url(images/img-banner-typ1.png);
+    background-image: url(/images/img-banner-typ1.png);
     background-size: cover;
     background-position: center;
     margin : 3rem 0;
@@ -1438,7 +1438,7 @@ border-bottom: 1px solid #ffffff46;
     position: relative;
 }
 .accordion-button:not(.collapsed)::after{
-    background: url(images/arrow_onactive.svg);
+    background: url(/images/arrow_onactive.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -1453,7 +1453,7 @@ border-bottom: 1px solid #ffffff46;
     -o-transition: 1s all ease-in-out;
 }
 .accordion-button::after {
-    background: url(images/arrow.svg);
+    background: url(/images/arrow.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -1489,7 +1489,7 @@ border-bottom: 1px solid #ffffff46;
     background-color: var(--jdgm-star-color);
 }
 .img-overflow::after{
-    content: url(images/icon-button.svg);
+    content: url(/images/icon-button.svg);
     position: absolute;
     top: 0;
     right: 0;
