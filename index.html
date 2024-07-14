@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style sheets/bootstrap.min.css">
+    <link rel="stylesheet" href="style sheets/main_style.css">
+
+    <title>APEXX GAMING</title>
+</head>
+<body>
+    <!-- <div class="all"> -->
+
+    
+    <!-- Start of nav bar  -->
+    <!-- class="navbar sticky-top" -->
+    <nav>
+        <!-- <div class="position-relative"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-3 nav-logo">
+                    <img src="images/header-logo.png" alt="header-logo">
+                </div>
+                <div class="col-6 nav-elements">
+                    <ul>
+                        <li class="landing" onclick="goto('')">HOME</li>
+                        <li onclick="goto('')" class="shop-items">SHOP   <a href="#" class="rotate-arrow"> > </a>
+                        </li>
+                        <li onclick="goto('')">ABOUT </li>
+                        <li onclick="goto('')">PAGES  <a href="#" class="rotate-arrow"> > </a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-3 nav-icons">
+                    <div class="rwd-menu">
+                        <!-- RWD MENU -->
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">MENU</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                    <ul>
+                                    <li class="landing" onclick="goto('')">HOME</li>
+                                    <li onclick="goto('')">SHOP   <a> > </a></li>
+                                    <li onclick="goto('')">ABOUT </li>
+                                    <li onclick="goto('')">PAGES  <a> > </a></li>
+                                </ul>
+                                <a href="#" class="log-in">LOG IN ?</a>
+                                <div class="social-icons">
+                                    <p>
+                                        <a href="#">
+                                            <i class="fa-brands fa-x-twitter fa-l" style="color: #ccff00;"></i>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook fa-l" style="color: #ccff00;"></i>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram fa-l" style="color: #ccff00;"></i>
+                                        </a>
+                                        
+                                    </p>
+                                    <p>
+                                        <a href="#">
+                                            <i class="fa-brands fa-snapchat fa-l" style="color: #ccff00;"></i>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="#">
+                                            <i class="fa-brands fa-vimeo-v fa-l" style="color: #ccff00;"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- icons -->
+                    <div class="icon-element">
+                        <a href="#">
+                        <svg class="svg-color-change" width="64" height="64" style="width:2rem; height:2rem;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="currentColor">
+                            <path d="M49.104 50.6667H8.62933L0 18.6667V13.3334H48V18.6667H5.42933L12.704 45.3334H46.896L53.3333 38.896V2.66669H64V8.00002H58.6667V41.104L49.104 50.6667Z" fill="currentColor"></path>
+                            <path d="M13.333 61.3333C11.7508 61.3333 10.204 60.8642 8.88845 59.9851C7.57286 59.1061 6.54748 57.8566 5.94198 56.3948C5.33647 54.933 5.17805 53.3245 5.48673 51.7726C5.79541 50.2208 6.55734 48.7953 7.67616 47.6765C8.79498 46.5577 10.2204 45.7957 11.7723 45.4871C13.3241 45.1784 14.9327 45.3368 16.3945 45.9423C17.8563 46.5478 19.1057 47.5732 19.9848 48.8888C20.8638 50.2044 21.333 51.7511 21.333 53.3333C21.333 55.4551 20.4902 57.4899 18.9899 58.9902C17.4896 60.4905 15.4547 61.3333 13.333 61.3333ZM13.333 50.6667C12.8056 50.6667 12.29 50.8231 11.8515 51.1161C11.413 51.4091 11.0712 51.8256 10.8693 52.3129C10.6675 52.8001 10.6147 53.3363 10.7176 53.8536C10.8205 54.3709 11.0745 54.846 11.4474 55.219C11.8203 55.5919 12.2955 55.8459 12.8128 55.9488C13.3301 56.0517 13.8662 55.9989 14.3535 55.797C14.8408 55.5952 15.2572 55.2534 15.5503 54.8149C15.8433 54.3763 15.9997 53.8608 15.9997 53.3333C15.9997 52.6261 15.7187 51.9478 15.2186 51.4477C14.7185 50.9476 14.0403 50.6667 13.333 50.6667Z" fill="currentColor"></path>
+                            <path d="M42.667 61.3333C41.0847 61.3333 39.538 60.8642 38.2224 59.9851C36.9068 59.1061 35.8815 57.8566 35.276 56.3948C34.6705 54.933 34.512 53.3245 34.8207 51.7726C35.1294 50.2208 35.8913 48.7953 37.0101 47.6765C38.129 46.5577 39.5544 45.7957 41.1063 45.4871C42.6581 45.1784 44.2667 45.3368 45.7285 45.9423C47.1903 46.5478 48.4397 47.5732 49.3188 48.8888C50.1978 50.2044 50.667 51.7511 50.667 53.3333C50.667 55.4551 49.8241 57.4899 48.3239 58.9902C46.8236 60.4905 44.7887 61.3333 42.667 61.3333ZM42.667 50.6667C42.1396 50.6667 41.624 50.8231 41.1855 51.1161C40.7469 51.4091 40.4052 51.8256 40.2033 52.3129C40.0015 52.8001 39.9487 53.3363 40.0516 53.8536C40.1545 54.3709 40.4084 54.846 40.7814 55.219C41.1543 55.5919 41.6295 55.8459 42.1468 55.9488C42.664 56.0517 43.2002 55.9989 43.6875 55.797C44.1748 55.5952 44.5912 55.2534 44.8843 54.8149C45.1773 54.3763 45.3337 53.8608 45.3337 53.3333C45.3337 52.6261 45.0527 51.9478 44.5526 51.4477C44.0525 50.9476 43.3742 50.6667 42.667 50.6667Z" fill="currentColor"></path>
+                            </g>
+                            <!-- not known -->
+                            <defs>
+                            <linearGradient id="paint0_linear_1244_332" x1="39.5699" y1="50.6667" x2="70.6493" y2="39.3212" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#ADFF00"></stop>
+                            <stop offset="1" stop-color="currentColor"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_1244_332" x1="15.2255" y1="61.3333" x2="23.4168" y2="59.0907" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#ADFF00"></stop>
+                            <stop offset="1" stop-color="currentColor"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_1244_332" x1="44.5595" y1="61.3333" x2="52.7507" y2="59.0907" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#ADFF00"></stop>
+                            <stop offset="1" stop-color="currentColor"></stop>
+                            </linearGradient>
+                            <clipPath id="clip0_1244_332">
+                            <rect width="64" height="64" fill="currentColor"></rect>
+                            </clipPath>
+                            </defs>
+                            <!-- not known -->
+                            </svg>
+                            </a>
+                    </div>
+                    <div class="icon-element person-icon">
+                        <a href="#">
+                        <svg  class="svg-color-change" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 15.1429C17.6293 15.1429 20.5714 12.2007 20.5714 8.57143C20.5714 4.94213 17.6293 2 14 2C10.3707 2 7.42859 4.94213 7.42859 8.57143C7.42859 12.2007 10.3707 15.1429 14 15.1429Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M2 26C2 19.9984 5.18545 15.1428 11.8182 15.1428H16.1818C22.8145 15.1428 26 19.9984 26 26" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icon-element">
+                        <a href="#">
+                        <svg class="svg-color-change" width="28" height="21" style="width:2rem; height:2rem;" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.4499 0H7.0791V3.93258H20.4499V0Z" fill="currentColor"></path>
+                            <path d="M27.5281 8.53369H0V12.4663H27.5281V8.53369Z" fill="currentColor"></path>
+                            <path d="M20.4499 17.0674H7.0791V21H20.4499V17.0674Z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    <!-- </div> -->
+    </nav>
+    <!--    End of nav bar     -->
+    <!--///////////////////////-->
+    <!-- start of main section -->
+    <main>
+        <!-- first gallery  -->
+        <div class="container-fluid fluid-restyle">
+            <div id="carouselExampleCaptions" class="carousel slide">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- first slider  -->
+                <div class="carousel-item active">
+                    <img src="images/slide-1-5x (1).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption carousel-caption-restyle-1 d-none d-md-block">
+                        <div class="flight-simulation-style">
+                            <svg class="border-right" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                </svg>
+                            <h6>
+                                FLIGHT SIMULATION
+                            </h6>
+                            <svg class="border-left" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                </svg>
+                        </div>
+                        <h1>
+                            LEVEL UP YOUR 
+                        </h1>
+                        <h2>GAMING EXPERIANCE
+                        </h2>
+                        <div class="view-shop-btn">
+                            <!-- view more btn -->
+                            <div class="view-more-btn">
+                                <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                                <a href="#">
+                                    VIEW MORE
+                                </a>
+                                <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+
+                            <!-- shop now btn -->
+                            <div class="shop-now-btn">
+                                <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                                <a href="#" >
+                                    SHOP NOW
+                                </a>
+                                <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- second slider -->
+                <div class="carousel-item ">
+                    <img src="images/slider-02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption carousel-caption-restyle-2 d-none d-md-block">
+                        <div class="racing-style">
+                            <h6>RACING</h6>
+                            <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                </svg>
+                        </div>
+                        <h1>
+                            ESCAPE REALITY ,
+                        </h1>
+                        <h2>
+                            EMBRACE THE GAME
+                        </h2>
+                        <div class="view-shop-btn">
+                            <div class="view-more-btn">
+                                <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                                <a href="#">
+                                    VIEW MORE
+                                </a>
+                                <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                            <div class="shop-now-btn">
+                                <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                                <a href="#" >
+                                    SHOP NOW
+                                </a>
+                                <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third slider -->
+                <div class="carousel-item">
+                    <img src="images/slider-01.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption carousel-caption-restyle-2 carousel-3 d-none d-md-block">
+                        <div class="racing-style">
+                            <h6>FIGHTING</h6>
+                            <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                </svg>
+                        </div>
+                        <h1>
+                            DIVE INTO THE GAME ,
+                        </h1>
+                        <h2>
+                            EMERGE A HERO
+                        </h2>
+                        <div class="view-shop-btn">
+                            <div class="view-more-btn">
+                                <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                                <a href="#">
+                                    VIEW MORE
+                                </a>
+                                <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                            <div class="shop-now-btn">
+                                <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                                <a href="#" >
+                                    SHOP NOW
+                                </a>
+                                <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+        <!--   end of firsy gallery     -->
+        <!-- ///////////////////////////-->
+        <!-- start of the fisrt section -->
+        <section class="sec-no1">
+            <div class="container-fluid">
+                <div class="services">
+                    <h6>OUR SERVICES</h6>
+                    <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+                <h1>
+                    DONEC CONSECTETUR  <img src="images/img-richtext_2.webp" alt=""> 
+                    NISI MASSA MASSA <img src="images/img-richtext_3.webp" alt=""> 
+                    NCUS VEL. PROIN ELEIFEND RISUS DIGNISSIM SEMPER BUS.... <img src="images/home-section-image-1-1.webp" alt="">
+                </h1>
+                <h5>Aenean bibendum ipsum sit amet fringilla sodales.
+                    Maecenas faucibus quam nec mauris ultricies finibus. 
+                    Vivamus mauris odio, cursus sit amet lectus a, mattis laoreet urna lobortis.</h5>
+            </div>
+        </section>
+
+        <!-- Start of the second section -->
+        <section class="sec-no2 container-fluid">
+            <div class="marquee-styling">
+                UNLOCK THE FUN <img src="images/marquee-img.png" alt="">
+                DISCOVER THE POWER OF PLAY <img src="images/marquee-img.png" alt="">
+                DIVE INTO THE ENDLESS FUN <img src="images/marquee-img.png" alt="">
+                PLAY. WIN. REPEAT <img src="images/marquee-img.png" alt="">
+            </div>
+        </section>
+
+        <!-- start of the third section -->
+        <section class="sec-no3 ">
+            <div class="container-fluid">
+                <div class="offering">
+                    <svg class="lying-left" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                    <h6>
+                        OUR OFFERINGS
+                    </h6>
+                    <svg class="lying-right" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+                <h1>KEY GAMING ACCESSORIES</h1>
+                <!-- Gaming items -->
+                <div class="gaming-items">
+                    <!--  -->
+                    <div class="card" style="width: 21rem;">
+                        <div class="item-properties">
+                            <img src="images/shop-11-01.webp" alt="...">
+                            <div class="properties">
+                                    <!--  -->
+                                <div class="compare">
+                                    <svg class="compare-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.7573 7.15129H24.121V7.15856V2.79492" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M24.1212 7.15152L22.4849 5.51515C20.3127 3.34303 17.3127 2 14 2C7.37212 2 2 7.37212 2 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.2423 20.8483H3.87866V20.8411V25.2047" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.87866 20.8485L5.51503 22.4848C7.68715 24.657 10.6871 26 13.9999 26C20.6278 26 25.9999 20.6279 25.9999 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>ADD TO COMPARE</p>
+                                </div>
+                                
+                                    <!--  -->
+                                <div class="cart">
+                                    <svg class="cart-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="currentColor">
+                                        <path d="M49.104 50.6667H8.62933L0 18.6667V13.3334H48V18.6667H5.42933L12.704 45.3334H46.896L53.3333 38.896V2.66669H64V8.00002H58.6667V41.104L49.104 50.6667Z" fill="currentColor"></path>
+                                        <path d="M13.333 61.3333C11.7508 61.3333 10.204 60.8642 8.88845 59.9851C7.57286 59.1061 6.54748 57.8566 5.94198 56.3948C5.33647 54.933 5.17805 53.3245 5.48673 51.7726C5.79541 50.2208 6.55734 48.7953 7.67616 47.6765C8.79498 46.5577 10.2204 45.7957 11.7723 45.4871C13.3241 45.1784 14.9327 45.3368 16.3945 45.9423C17.8563 46.5478 19.1057 47.5732 19.9848 48.8888C20.8638 50.2044 21.333 51.7511 21.333 53.3333C21.333 55.4551 20.4902 57.4899 18.9899 58.9902C17.4896 60.4905 15.4547 61.3333 13.333 61.3333ZM13.333 50.6667C12.8056 50.6667 12.29 50.8231 11.8515 51.1161C11.413 51.4091 11.0712 51.8256 10.8693 52.3129C10.6675 52.8001 10.6147 53.3363 10.7176 53.8536C10.8205 54.3709 11.0745 54.846 11.4474 55.219C11.8203 55.5919 12.2955 55.8459 12.8128 55.9488C13.3301 56.0517 13.8662 55.9989 14.3535 55.797C14.8408 55.5952 15.2572 55.2534 15.5503 54.8149C15.8433 54.3763 15.9997 53.8608 15.9997 53.3333C15.9997 52.6261 15.7187 51.9478 15.2186 51.4477C14.7185 50.9476 14.0403 50.6667 13.333 50.6667Z" fill="currentColor"></path>
+                                        <path d="M42.667 61.3333C41.0847 61.3333 39.538 60.8642 38.2224 59.9851C36.9068 59.1061 35.8815 57.8566 35.276 56.3948C34.6705 54.933 34.512 53.3245 34.8207 51.7726C35.1294 50.2208 35.8913 48.7953 37.0101 47.6765C38.129 46.5577 39.5544 45.7957 41.1063 45.4871C42.6581 45.1784 44.2667 45.3368 45.7285 45.9423C47.1903 46.5478 48.4397 47.5732 49.3188 48.8888C50.1978 50.2044 50.667 51.7511 50.667 53.3333C50.667 55.4551 49.8241 57.4899 48.3239 58.9902C46.8236 60.4905 44.7887 61.3333 42.667 61.3333ZM42.667 50.6667C42.1396 50.6667 41.624 50.8231 41.1855 51.1161C40.7469 51.4091 40.4052 51.8256 40.2033 52.3129C40.0015 52.8001 39.9487 53.3363 40.0516 53.8536C40.1545 54.3709 40.4084 54.846 40.7814 55.219C41.1543 55.5919 41.6295 55.8459 42.1468 55.9488C42.664 56.0517 43.2002 55.9989 43.6875 55.797C44.1748 55.5952 44.5912 55.2534 44.8843 54.8149C45.1773 54.3763 45.3337 53.8608 45.3337 53.3333C45.3337 52.6261 45.0527 51.9478 44.5526 51.4477C44.0525 50.9476 43.3742 50.6667 42.667 50.6667Z" fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1244_332" x1="39.5699" y1="50.6667" x2="70.6493" y2="39.3212" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ADFF00"></stop>
+                                        <stop offset="1" stop-color="currentColor"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_1244_332" x1="15.2255" y1="61.3333" x2="23.4168" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ADFF00"></stop>
+                                        <stop offset="1" stop-color="currentColor"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_1244_332" x1="44.5595" y1="61.3333" x2="52.7507" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ADFF00"></stop>
+                                        <stop offset="1" stop-color="currentColor"></stop>
+                                        </linearGradient>
+                                        <clipPath id="clip0_1244_332">
+                                        <rect width="64" height="64" fill="currentColor"></rect>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        <p>ADD TO CART</p>
+                                </div>
+                                    
+                                        <!--  -->
+                                <div class="wishlist">
+                                    <svg class="wishlist-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M58.1866 8.33332C54.7686 4.92271 50.2261 2.87268 45.4073 2.56598C40.5885 2.25929 35.8228 3.71689 32 6.66665C28.0073 3.59151 22.9946 2.14984 17.9783 2.63399C12.962 3.11813 8.31755 5.49184 4.98671 9.27381C1.65587 13.0558 -0.112048 17.9629 0.0414461 23.0002C0.194941 28.0375 2.25836 32.8278 5.81329 36.4L32 62.5867L58.1866 36.4C61.9002 32.6737 63.9854 27.6274 63.9854 22.3667C63.9854 17.1059 61.9002 12.0596 58.1866 8.33332ZM54.4133 32.6267L32 55.04L9.58662 32.6267C6.98751 29.8792 5.56295 26.2261 5.61601 22.4444C5.66907 18.6628 7.19556 15.051 9.87073 12.3776C12.5459 9.70417 16.1586 8.18003 19.9403 8.12943C23.722 8.07883 27.3742 9.50575 30.12 12.1067L32 13.9867L33.88 12.1067C36.6257 9.50575 40.2779 8.07883 44.0596 8.12943C47.8413 8.18003 51.454 9.70417 54.1292 12.3776C56.8044 15.051 58.3308 18.6628 58.3839 22.4444C58.437 26.2261 57.0124 29.8792 54.4133 32.6267Z" fill="url(#paint0_linear_1244_323)"/>
+                                        <path d="M44.1467 13.1867C42.9418 13.1802 41.7477 13.4125 40.6331 13.8702C39.5186 14.3279 38.5059 15.0019 37.6533 15.8533L41.4267 19.6267C42.1663 18.9407 43.1379 18.5595 44.1467 18.5595C45.1555 18.5595 46.127 18.9407 46.8667 19.6267C47.2251 19.9845 47.5094 20.4096 47.7034 20.8774C47.8974 21.3453 47.9972 21.8468 47.9972 22.3533C47.9972 22.8598 47.8974 23.3613 47.7034 23.8292C47.5094 24.2971 47.2251 24.7221 46.8667 25.08L50.6667 28.8533C51.954 27.5688 52.8304 25.9306 53.1846 24.1468C53.5389 22.3631 53.355 20.5143 52.6562 18.8353C51.9575 17.1563 50.7754 15.7229 49.2603 14.7171C47.7451 13.7114 45.9652 13.1786 44.1467 13.1867Z" fill="url(#paint1_linear_1244_323)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1244_323" x1="39.5732" y1="62.5867" x2="72.0116" y2="53.1299" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ADFF00"/>
+                                        <stop offset="1" stop-color="#CCFF00"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_1244_323" x1="47.3647" y1="28.8533" x2="55.4031" y2="26.6469" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ADFF00"/>
+                                        <stop offset="1" stop-color="#CCFF00"/>
+                                        </linearGradient>
+                                        </defs>
+                                        </svg>
+                                        <p>ADD TO WISHLIST</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card-body card-1">
+                            <div class="stars">
+                                <svg class="star1" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#ccff00"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                <svg class="star2" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                <svg class="star3" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                <svg class="star4" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                <svg class="star5" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                            </div>
+                        <h3 class="card-title">GAMING KEYBOARD</h3>
+                        <p class="card-text">$2,500.00</p>
+                        </div>
+                    </div>
+                        <!--  -->
+                        <div class="card" style="width: 21rem;">
+                            <div class="item-properties">
+                                <img src="images/shop-9-01.webp"  alt="...">
+                                <div class="properties">
+                                    <!--  -->
+                                    <div class="compare">
+                                        <svg class="compare-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.7573 7.15129H24.121V7.15856V2.79492" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M24.1212 7.15152L22.4849 5.51515C20.3127 3.34303 17.3127 2 14 2C7.37212 2 2 7.37212 2 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.2423 20.8483H3.87866V20.8411V25.2047" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.87866 20.8485L5.51503 22.4848C7.68715 24.657 10.6871 26 13.9999 26C20.6278 26 25.9999 20.6279 25.9999 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <p>ADD TO COMPARE</p>
+                                    </div>
+                                    
+                                        <!--  -->
+                                    <div class="cart">
+                                        <svg class="cart-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="currentColor">
+                                            <path d="M49.104 50.6667H8.62933L0 18.6667V13.3334H48V18.6667H5.42933L12.704 45.3334H46.896L53.3333 38.896V2.66669H64V8.00002H58.6667V41.104L49.104 50.6667Z" fill="currentColor"></path>
+                                            <path d="M13.333 61.3333C11.7508 61.3333 10.204 60.8642 8.88845 59.9851C7.57286 59.1061 6.54748 57.8566 5.94198 56.3948C5.33647 54.933 5.17805 53.3245 5.48673 51.7726C5.79541 50.2208 6.55734 48.7953 7.67616 47.6765C8.79498 46.5577 10.2204 45.7957 11.7723 45.4871C13.3241 45.1784 14.9327 45.3368 16.3945 45.9423C17.8563 46.5478 19.1057 47.5732 19.9848 48.8888C20.8638 50.2044 21.333 51.7511 21.333 53.3333C21.333 55.4551 20.4902 57.4899 18.9899 58.9902C17.4896 60.4905 15.4547 61.3333 13.333 61.3333ZM13.333 50.6667C12.8056 50.6667 12.29 50.8231 11.8515 51.1161C11.413 51.4091 11.0712 51.8256 10.8693 52.3129C10.6675 52.8001 10.6147 53.3363 10.7176 53.8536C10.8205 54.3709 11.0745 54.846 11.4474 55.219C11.8203 55.5919 12.2955 55.8459 12.8128 55.9488C13.3301 56.0517 13.8662 55.9989 14.3535 55.797C14.8408 55.5952 15.2572 55.2534 15.5503 54.8149C15.8433 54.3763 15.9997 53.8608 15.9997 53.3333C15.9997 52.6261 15.7187 51.9478 15.2186 51.4477C14.7185 50.9476 14.0403 50.6667 13.333 50.6667Z" fill="currentColor"></path>
+                                            <path d="M42.667 61.3333C41.0847 61.3333 39.538 60.8642 38.2224 59.9851C36.9068 59.1061 35.8815 57.8566 35.276 56.3948C34.6705 54.933 34.512 53.3245 34.8207 51.7726C35.1294 50.2208 35.8913 48.7953 37.0101 47.6765C38.129 46.5577 39.5544 45.7957 41.1063 45.4871C42.6581 45.1784 44.2667 45.3368 45.7285 45.9423C47.1903 46.5478 48.4397 47.5732 49.3188 48.8888C50.1978 50.2044 50.667 51.7511 50.667 53.3333C50.667 55.4551 49.8241 57.4899 48.3239 58.9902C46.8236 60.4905 44.7887 61.3333 42.667 61.3333ZM42.667 50.6667C42.1396 50.6667 41.624 50.8231 41.1855 51.1161C40.7469 51.4091 40.4052 51.8256 40.2033 52.3129C40.0015 52.8001 39.9487 53.3363 40.0516 53.8536C40.1545 54.3709 40.4084 54.846 40.7814 55.219C41.1543 55.5919 41.6295 55.8459 42.1468 55.9488C42.664 56.0517 43.2002 55.9989 43.6875 55.797C44.1748 55.5952 44.5912 55.2534 44.8843 54.8149C45.1773 54.3763 45.3337 53.8608 45.3337 53.3333C45.3337 52.6261 45.0527 51.9478 44.5526 51.4477C44.0525 50.9476 43.3742 50.6667 42.667 50.6667Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1244_332" x1="39.5699" y1="50.6667" x2="70.6493" y2="39.3212" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_1244_332" x1="15.2255" y1="61.3333" x2="23.4168" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_1244_332" x1="44.5595" y1="61.3333" x2="52.7507" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <clipPath id="clip0_1244_332">
+                                            <rect width="64" height="64" fill="currentColor"></rect>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            <p>ADD TO CART</p>
+                                    </div>
+                                        
+                                            <!--  -->
+                                    <div class="wishlist">
+                                        <svg class="wishlist-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M58.1866 8.33332C54.7686 4.92271 50.2261 2.87268 45.4073 2.56598C40.5885 2.25929 35.8228 3.71689 32 6.66665C28.0073 3.59151 22.9946 2.14984 17.9783 2.63399C12.962 3.11813 8.31755 5.49184 4.98671 9.27381C1.65587 13.0558 -0.112048 17.9629 0.0414461 23.0002C0.194941 28.0375 2.25836 32.8278 5.81329 36.4L32 62.5867L58.1866 36.4C61.9002 32.6737 63.9854 27.6274 63.9854 22.3667C63.9854 17.1059 61.9002 12.0596 58.1866 8.33332ZM54.4133 32.6267L32 55.04L9.58662 32.6267C6.98751 29.8792 5.56295 26.2261 5.61601 22.4444C5.66907 18.6628 7.19556 15.051 9.87073 12.3776C12.5459 9.70417 16.1586 8.18003 19.9403 8.12943C23.722 8.07883 27.3742 9.50575 30.12 12.1067L32 13.9867L33.88 12.1067C36.6257 9.50575 40.2779 8.07883 44.0596 8.12943C47.8413 8.18003 51.454 9.70417 54.1292 12.3776C56.8044 15.051 58.3308 18.6628 58.3839 22.4444C58.437 26.2261 57.0124 29.8792 54.4133 32.6267Z" fill="url(#paint0_linear_1244_323)"/>
+                                            <path d="M44.1467 13.1867C42.9418 13.1802 41.7477 13.4125 40.6331 13.8702C39.5186 14.3279 38.5059 15.0019 37.6533 15.8533L41.4267 19.6267C42.1663 18.9407 43.1379 18.5595 44.1467 18.5595C45.1555 18.5595 46.127 18.9407 46.8667 19.6267C47.2251 19.9845 47.5094 20.4096 47.7034 20.8774C47.8974 21.3453 47.9972 21.8468 47.9972 22.3533C47.9972 22.8598 47.8974 23.3613 47.7034 23.8292C47.5094 24.2971 47.2251 24.7221 46.8667 25.08L50.6667 28.8533C51.954 27.5688 52.8304 25.9306 53.1846 24.1468C53.5389 22.3631 53.355 20.5143 52.6562 18.8353C51.9575 17.1563 50.7754 15.7229 49.2603 14.7171C47.7451 13.7114 45.9652 13.1786 44.1467 13.1867Z" fill="url(#paint1_linear_1244_323)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1244_323" x1="39.5732" y1="62.5867" x2="72.0116" y2="53.1299" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"/>
+                                            <stop offset="1" stop-color="#CCFF00"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_1244_323" x1="47.3647" y1="28.8533" x2="55.4031" y2="26.6469" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"/>
+                                            <stop offset="1" stop-color="#CCFF00"/>
+                                            </linearGradient>
+                                            </defs>
+                                            </svg>
+                                            <p>ADD TO WISHLIST</p>
+                                    </div>
+                                            
+                            </div>
+                            </div>
+                            
+                            <div class="card-body card-2">
+                                <div class="stars">
+                                    <svg class="star1" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star2" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star3" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star4" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star5" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                </div>
+                            <h3 class="card-title">GAMING DESK</h3>
+                            <p class="card-text">$1,000.00</p>
+                            
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="card" style="width: 21rem;">
+                            <div class="item-properties">
+                                <img src="images/shop-10-01.webp" alt="...">
+                                <div class="properties">
+                                    <!--  -->
+                                    <div class="compare">
+                                        <svg class="compare-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.7573 7.15129H24.121V7.15856V2.79492" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M24.1212 7.15152L22.4849 5.51515C20.3127 3.34303 17.3127 2 14 2C7.37212 2 2 7.37212 2 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.2423 20.8483H3.87866V20.8411V25.2047" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.87866 20.8485L5.51503 22.4848C7.68715 24.657 10.6871 26 13.9999 26C20.6278 26 25.9999 20.6279 25.9999 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <p>ADD TO COMPARE</p>
+                                    </div>
+                                    
+                                        <!--  -->
+                                    <div class="cart">
+                                        <svg class="cart-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="currentColor">
+                                            <path d="M49.104 50.6667H8.62933L0 18.6667V13.3334H48V18.6667H5.42933L12.704 45.3334H46.896L53.3333 38.896V2.66669H64V8.00002H58.6667V41.104L49.104 50.6667Z" fill="currentColor"></path>
+                                            <path d="M13.333 61.3333C11.7508 61.3333 10.204 60.8642 8.88845 59.9851C7.57286 59.1061 6.54748 57.8566 5.94198 56.3948C5.33647 54.933 5.17805 53.3245 5.48673 51.7726C5.79541 50.2208 6.55734 48.7953 7.67616 47.6765C8.79498 46.5577 10.2204 45.7957 11.7723 45.4871C13.3241 45.1784 14.9327 45.3368 16.3945 45.9423C17.8563 46.5478 19.1057 47.5732 19.9848 48.8888C20.8638 50.2044 21.333 51.7511 21.333 53.3333C21.333 55.4551 20.4902 57.4899 18.9899 58.9902C17.4896 60.4905 15.4547 61.3333 13.333 61.3333ZM13.333 50.6667C12.8056 50.6667 12.29 50.8231 11.8515 51.1161C11.413 51.4091 11.0712 51.8256 10.8693 52.3129C10.6675 52.8001 10.6147 53.3363 10.7176 53.8536C10.8205 54.3709 11.0745 54.846 11.4474 55.219C11.8203 55.5919 12.2955 55.8459 12.8128 55.9488C13.3301 56.0517 13.8662 55.9989 14.3535 55.797C14.8408 55.5952 15.2572 55.2534 15.5503 54.8149C15.8433 54.3763 15.9997 53.8608 15.9997 53.3333C15.9997 52.6261 15.7187 51.9478 15.2186 51.4477C14.7185 50.9476 14.0403 50.6667 13.333 50.6667Z" fill="currentColor"></path>
+                                            <path d="M42.667 61.3333C41.0847 61.3333 39.538 60.8642 38.2224 59.9851C36.9068 59.1061 35.8815 57.8566 35.276 56.3948C34.6705 54.933 34.512 53.3245 34.8207 51.7726C35.1294 50.2208 35.8913 48.7953 37.0101 47.6765C38.129 46.5577 39.5544 45.7957 41.1063 45.4871C42.6581 45.1784 44.2667 45.3368 45.7285 45.9423C47.1903 46.5478 48.4397 47.5732 49.3188 48.8888C50.1978 50.2044 50.667 51.7511 50.667 53.3333C50.667 55.4551 49.8241 57.4899 48.3239 58.9902C46.8236 60.4905 44.7887 61.3333 42.667 61.3333ZM42.667 50.6667C42.1396 50.6667 41.624 50.8231 41.1855 51.1161C40.7469 51.4091 40.4052 51.8256 40.2033 52.3129C40.0015 52.8001 39.9487 53.3363 40.0516 53.8536C40.1545 54.3709 40.4084 54.846 40.7814 55.219C41.1543 55.5919 41.6295 55.8459 42.1468 55.9488C42.664 56.0517 43.2002 55.9989 43.6875 55.797C44.1748 55.5952 44.5912 55.2534 44.8843 54.8149C45.1773 54.3763 45.3337 53.8608 45.3337 53.3333C45.3337 52.6261 45.0527 51.9478 44.5526 51.4477C44.0525 50.9476 43.3742 50.6667 42.667 50.6667Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1244_332" x1="39.5699" y1="50.6667" x2="70.6493" y2="39.3212" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_1244_332" x1="15.2255" y1="61.3333" x2="23.4168" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_1244_332" x1="44.5595" y1="61.3333" x2="52.7507" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <clipPath id="clip0_1244_332">
+                                            <rect width="64" height="64" fill="currentColor"></rect>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            <p>ADD TO CART</p>
+                                    </div>
+                                        
+                                            <!--  -->
+                                    <div class="wishlist">
+                                        <svg class="wishlist-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M58.1866 8.33332C54.7686 4.92271 50.2261 2.87268 45.4073 2.56598C40.5885 2.25929 35.8228 3.71689 32 6.66665C28.0073 3.59151 22.9946 2.14984 17.9783 2.63399C12.962 3.11813 8.31755 5.49184 4.98671 9.27381C1.65587 13.0558 -0.112048 17.9629 0.0414461 23.0002C0.194941 28.0375 2.25836 32.8278 5.81329 36.4L32 62.5867L58.1866 36.4C61.9002 32.6737 63.9854 27.6274 63.9854 22.3667C63.9854 17.1059 61.9002 12.0596 58.1866 8.33332ZM54.4133 32.6267L32 55.04L9.58662 32.6267C6.98751 29.8792 5.56295 26.2261 5.61601 22.4444C5.66907 18.6628 7.19556 15.051 9.87073 12.3776C12.5459 9.70417 16.1586 8.18003 19.9403 8.12943C23.722 8.07883 27.3742 9.50575 30.12 12.1067L32 13.9867L33.88 12.1067C36.6257 9.50575 40.2779 8.07883 44.0596 8.12943C47.8413 8.18003 51.454 9.70417 54.1292 12.3776C56.8044 15.051 58.3308 18.6628 58.3839 22.4444C58.437 26.2261 57.0124 29.8792 54.4133 32.6267Z" fill="url(#paint0_linear_1244_323)"/>
+                                            <path d="M44.1467 13.1867C42.9418 13.1802 41.7477 13.4125 40.6331 13.8702C39.5186 14.3279 38.5059 15.0019 37.6533 15.8533L41.4267 19.6267C42.1663 18.9407 43.1379 18.5595 44.1467 18.5595C45.1555 18.5595 46.127 18.9407 46.8667 19.6267C47.2251 19.9845 47.5094 20.4096 47.7034 20.8774C47.8974 21.3453 47.9972 21.8468 47.9972 22.3533C47.9972 22.8598 47.8974 23.3613 47.7034 23.8292C47.5094 24.2971 47.2251 24.7221 46.8667 25.08L50.6667 28.8533C51.954 27.5688 52.8304 25.9306 53.1846 24.1468C53.5389 22.3631 53.355 20.5143 52.6562 18.8353C51.9575 17.1563 50.7754 15.7229 49.2603 14.7171C47.7451 13.7114 45.9652 13.1786 44.1467 13.1867Z" fill="url(#paint1_linear_1244_323)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1244_323" x1="39.5732" y1="62.5867" x2="72.0116" y2="53.1299" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"/>
+                                            <stop offset="1" stop-color="#CCFF00"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_1244_323" x1="47.3647" y1="28.8533" x2="55.4031" y2="26.6469" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"/>
+                                            <stop offset="1" stop-color="#CCFF00"/>
+                                            </linearGradient>
+                                            </defs>
+                                            </svg>
+                                            <p>ADD TO WISHLIST</p>
+                                    </div>
+                                            
+                            </div>
+                            </div>
+                        
+                            <div class="card-body card-3">
+                                <div class="stars">
+                                    <svg class="star1" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star2" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star3" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star4" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star5" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                </div>
+                            <h3 class="card-title">GAMING CHAIR</h3>
+                            <p class="card-text">$3,500.00</p>
+                            
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="card" style="width: 21rem;">
+                            <div class="item-properties">
+                                <img src="images/shop-8-01.webp" alt="...">
+                                <div class="properties">
+                                    <!--  -->
+                                    <div class="compare">
+                                        <svg class="compare-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.7573 7.15129H24.121V7.15856V2.79492" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M24.1212 7.15152L22.4849 5.51515C20.3127 3.34303 17.3127 2 14 2C7.37212 2 2 7.37212 2 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.2423 20.8483H3.87866V20.8411V25.2047" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.87866 20.8485L5.51503 22.4848C7.68715 24.657 10.6871 26 13.9999 26C20.6278 26 25.9999 20.6279 25.9999 14" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <p>ADD TO COMPARE</p>
+                                    </div>
+                                    
+                                        <!--  -->
+                                    <div class="cart">
+                                        <svg class="cart-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="currentColor">
+                                            <path d="M49.104 50.6667H8.62933L0 18.6667V13.3334H48V18.6667H5.42933L12.704 45.3334H46.896L53.3333 38.896V2.66669H64V8.00002H58.6667V41.104L49.104 50.6667Z" fill="currentColor"></path>
+                                            <path d="M13.333 61.3333C11.7508 61.3333 10.204 60.8642 8.88845 59.9851C7.57286 59.1061 6.54748 57.8566 5.94198 56.3948C5.33647 54.933 5.17805 53.3245 5.48673 51.7726C5.79541 50.2208 6.55734 48.7953 7.67616 47.6765C8.79498 46.5577 10.2204 45.7957 11.7723 45.4871C13.3241 45.1784 14.9327 45.3368 16.3945 45.9423C17.8563 46.5478 19.1057 47.5732 19.9848 48.8888C20.8638 50.2044 21.333 51.7511 21.333 53.3333C21.333 55.4551 20.4902 57.4899 18.9899 58.9902C17.4896 60.4905 15.4547 61.3333 13.333 61.3333ZM13.333 50.6667C12.8056 50.6667 12.29 50.8231 11.8515 51.1161C11.413 51.4091 11.0712 51.8256 10.8693 52.3129C10.6675 52.8001 10.6147 53.3363 10.7176 53.8536C10.8205 54.3709 11.0745 54.846 11.4474 55.219C11.8203 55.5919 12.2955 55.8459 12.8128 55.9488C13.3301 56.0517 13.8662 55.9989 14.3535 55.797C14.8408 55.5952 15.2572 55.2534 15.5503 54.8149C15.8433 54.3763 15.9997 53.8608 15.9997 53.3333C15.9997 52.6261 15.7187 51.9478 15.2186 51.4477C14.7185 50.9476 14.0403 50.6667 13.333 50.6667Z" fill="currentColor"></path>
+                                            <path d="M42.667 61.3333C41.0847 61.3333 39.538 60.8642 38.2224 59.9851C36.9068 59.1061 35.8815 57.8566 35.276 56.3948C34.6705 54.933 34.512 53.3245 34.8207 51.7726C35.1294 50.2208 35.8913 48.7953 37.0101 47.6765C38.129 46.5577 39.5544 45.7957 41.1063 45.4871C42.6581 45.1784 44.2667 45.3368 45.7285 45.9423C47.1903 46.5478 48.4397 47.5732 49.3188 48.8888C50.1978 50.2044 50.667 51.7511 50.667 53.3333C50.667 55.4551 49.8241 57.4899 48.3239 58.9902C46.8236 60.4905 44.7887 61.3333 42.667 61.3333ZM42.667 50.6667C42.1396 50.6667 41.624 50.8231 41.1855 51.1161C40.7469 51.4091 40.4052 51.8256 40.2033 52.3129C40.0015 52.8001 39.9487 53.3363 40.0516 53.8536C40.1545 54.3709 40.4084 54.846 40.7814 55.219C41.1543 55.5919 41.6295 55.8459 42.1468 55.9488C42.664 56.0517 43.2002 55.9989 43.6875 55.797C44.1748 55.5952 44.5912 55.2534 44.8843 54.8149C45.1773 54.3763 45.3337 53.8608 45.3337 53.3333C45.3337 52.6261 45.0527 51.9478 44.5526 51.4477C44.0525 50.9476 43.3742 50.6667 42.667 50.6667Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1244_332" x1="39.5699" y1="50.6667" x2="70.6493" y2="39.3212" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_1244_332" x1="15.2255" y1="61.3333" x2="23.4168" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_1244_332" x1="44.5595" y1="61.3333" x2="52.7507" y2="59.0907" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                            </linearGradient>
+                                            <clipPath id="clip0_1244_332">
+                                            <rect width="64" height="64" fill="currentColor"></rect>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            <p>ADD TO CART</p>
+                                    </div>
+                                        
+                                            <!--  -->
+                                    <div class="wishlist">
+                                        <svg class="wishlist-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M58.1866 8.33332C54.7686 4.92271 50.2261 2.87268 45.4073 2.56598C40.5885 2.25929 35.8228 3.71689 32 6.66665C28.0073 3.59151 22.9946 2.14984 17.9783 2.63399C12.962 3.11813 8.31755 5.49184 4.98671 9.27381C1.65587 13.0558 -0.112048 17.9629 0.0414461 23.0002C0.194941 28.0375 2.25836 32.8278 5.81329 36.4L32 62.5867L58.1866 36.4C61.9002 32.6737 63.9854 27.6274 63.9854 22.3667C63.9854 17.1059 61.9002 12.0596 58.1866 8.33332ZM54.4133 32.6267L32 55.04L9.58662 32.6267C6.98751 29.8792 5.56295 26.2261 5.61601 22.4444C5.66907 18.6628 7.19556 15.051 9.87073 12.3776C12.5459 9.70417 16.1586 8.18003 19.9403 8.12943C23.722 8.07883 27.3742 9.50575 30.12 12.1067L32 13.9867L33.88 12.1067C36.6257 9.50575 40.2779 8.07883 44.0596 8.12943C47.8413 8.18003 51.454 9.70417 54.1292 12.3776C56.8044 15.051 58.3308 18.6628 58.3839 22.4444C58.437 26.2261 57.0124 29.8792 54.4133 32.6267Z" fill="url(#paint0_linear_1244_323)"/>
+                                            <path d="M44.1467 13.1867C42.9418 13.1802 41.7477 13.4125 40.6331 13.8702C39.5186 14.3279 38.5059 15.0019 37.6533 15.8533L41.4267 19.6267C42.1663 18.9407 43.1379 18.5595 44.1467 18.5595C45.1555 18.5595 46.127 18.9407 46.8667 19.6267C47.2251 19.9845 47.5094 20.4096 47.7034 20.8774C47.8974 21.3453 47.9972 21.8468 47.9972 22.3533C47.9972 22.8598 47.8974 23.3613 47.7034 23.8292C47.5094 24.2971 47.2251 24.7221 46.8667 25.08L50.6667 28.8533C51.954 27.5688 52.8304 25.9306 53.1846 24.1468C53.5389 22.3631 53.355 20.5143 52.6562 18.8353C51.9575 17.1563 50.7754 15.7229 49.2603 14.7171C47.7451 13.7114 45.9652 13.1786 44.1467 13.1867Z" fill="url(#paint1_linear_1244_323)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1244_323" x1="39.5732" y1="62.5867" x2="72.0116" y2="53.1299" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"/>
+                                            <stop offset="1" stop-color="#CCFF00"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_1244_323" x1="47.3647" y1="28.8533" x2="55.4031" y2="26.6469" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ADFF00"/>
+                                            <stop offset="1" stop-color="#CCFF00"/>
+                                            </linearGradient>
+                                            </defs>
+                                            </svg>
+                                            <p>ADD TO WISHLIST</p>
+                                    </div>
+                                            
+                            </div>
+                            </div>
+                            
+                            <div class="card-body card-4">
+                                <div class="stars">
+                                    <svg class="star1" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star2" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star3" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="#cf0"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star4" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    <svg class="star5" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_476_1247)"><path d="M7.9987 11.5159L12.1187 14.0026L11.0254 9.31594L14.6654 6.1626L9.87203 5.75594L7.9987 1.33594L6.12536 5.75594L1.33203 6.1626L4.97203 9.31594L3.8787 14.0026L7.9987 11.5159Z" fill="none"></path></g><defs><clipPath id="clip0_476_1247"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                </div>
+                            <h3 class="card-title">GAMING MOUSE</h3>
+                            <p class="card-text">$450.00</p>
+                            
+                            </div>
+                        </div>
+                        <!--  -->
+                </div>
+                <!-- end of gaming items -->
+                
+                <div class="view-shop-btn">
+                    <div class="view-more-btn">
+                        <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                        <a href="#">
+                            VIEW ALL
+                        </a>
+                        <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of third section -->
+        <!-- Star of forth section -->
+        <section class="sec-no4">
+            <div class="container-fluid fluid-restyle">
+                <div id="carouselExampleCaptions-2" class="carousel slide">
+    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- first slider  -->
+                        <div class="carousel-item active">
+                            <img src="images/slider-tab-3-1-5x (1).png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption carousel-caption-restyle-2 carousel-3 d-none d-md-block">
+                                <div class="racing-style">
+                                    <h6>CAR RACE</h6>
+                                    <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                </div>
+                                <h1>
+                                    Access Adventure
+                                </h1>
+                                <p>
+                                    Mauris mollis vel neque eu lobortis. 
+                                    Maecenas tempor magna nec nisl euismod posuere. 
+                                    Ut semper, tortor non tincidunt ornare, magna orci vehicula quam, a tincitae ante.
+                                </p>
+                                <div class="view-shop-btn">
+                                    <div class="view-more-btn">
+                                        <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                            </svg>
+                                        <a href="#">
+                                            VIEW MORE
+                                        </a>
+                                        <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                            </svg>
+                                    </div>
+                                    <div class="shop-now-btn">
+                                        <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                            </svg>
+                                        <a href="#" >
+                                            SHOP NOW
+                                        </a>
+                                        <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                            </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    <!-- second slider -->
+                    <div class="carousel-item">
+                        <img src="images/slider-tab-1-1.5x.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption carousel-caption-restyle-2 carousel-3 d-none d-md-block">
+                            <div class="racing-style">
+                                <h6>ACTION</h6>
+                                <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                            <h1>
+                                Battle for Honor
+                            </h1>
+                            <p>
+                                Feugiat in ante metus dictum at tempor commodo. In pellentesque massa placerat duis ultricies lacus sed turpis maecenas volutpat blandit aliquam etiam.
+                            </p>
+                            <div class="view-shop-btn">
+                                <div class="view-more-btn">
+                                    <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                    <a href="#">
+                                        VIEW MORE
+                                    </a>
+                                    <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                </div>
+                                <div class="shop-now-btn">
+                                    <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                    <a href="#" >
+                                        SHOP NOW
+                                    </a>
+                                    <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <!-- third slider -->
+                    <div class="carousel-item">
+                        <img src="images/slider-tab-2-1.5x.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption carousel-caption-restyle-2 carousel-3 d-none d-md-block">
+                            <div class="racing-style">
+                                <h6>Simulation</h6>
+                                <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                    </svg>
+                            </div>
+                            <h1>
+                                War for Renown
+                            </h1>
+                            <p>
+                                Amet risus sit amet consectetur adipiscing elit pellentesque habitant morbi nullam eget felis eget nunc lobortis mattis aliquam sociis natoque penatibus et magnis dis parturient montes nascetur.
+                            </p>
+                            <div class="view-shop-btn">
+                                <div class="view-more-btn">
+                                    <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                    <a href="#">
+                                        VIEW MORE
+                                    </a>
+                                    <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                </div>
+                                <div class="shop-now-btn">
+                                    <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                    <a href="#" >
+                                        SHOP NOW
+                                    </a>
+                                    <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <!-- End of forth section -->
+        <section class="sec-no5">
+            <div class="sec-no5-img">
+                <img src="images/spec-block-1.5x.webp" alt="">
+            </div>
+            <div class="sec-no5-content">
+                <div class="racing-style">
+                    <h6>HOW WE DO</h6>
+                    <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+                <h1>
+                    FROM PIXELS TO PLAY: SHARING OUR STORY
+                </h1>
+                <p>
+                    Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est augue eget arcu dictum varius duis at consectetur.
+                </p>
+                <div class="more-about-sec5">
+                    <div class="creativity">
+                        <img src="images/spec-block-img-2x.avif" alt="">
+                        <div>
+                            <h3>
+                                CREATIVITY
+                            </h3>
+                            <p>
+                                Sed blandit libero volutpat
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="stess-releif">
+                        <img src="images/spec-block-img-2x_6734c3dc-3aef-474e-81a6-645e164ddab1.avif" alt="">
+                        <div>
+                            <h3>
+                                STRESS RELIEF
+                            </h3>
+                            <p>
+                                Congue mauris rhoncus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>Donec consectetur nisi massa, sed semper massa rhoncus vel. </li>
+                    <li>Proin eleifend risus dignissim semper dapibus.</li>
+                    <li>In mi eros, pulvinar in tempor non, facilisis non nunc.</li>
+                </ul>
+                
+                <div class="shop-now-btn">
+                    <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                    <a href="#" >
+                        SHOP NOW
+                    </a>
+                    <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+            </div>
+        </section>
+        <!-- sec 6 -->
+        <!-- <section class="sec-no6 slider-sec-no6">
+
+        </section> -->
+        <!-- sec 7 -->
+        <section class="sec-no7">
+            <div class="our-app">
+                <div class="racing-style">
+                    <h6>OUR APP</h6>
+                    <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+                <h1>
+                    UNLOCK GAMING
+                    GET OUR APP NOW
+                </h1>
+                <p>
+                    Gravida rutrum quisque non tellus orci 
+                    ac auctor vulputate eu scelerisque felis imperdiet.
+                </p>
+                <div class="getapp-btn">
+                    <a href="#">
+                        <img src="images/google-icon-1.webp" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/apple-icon.avif" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- sec 8 -->
+        <section class="sec-no8">
+            <div class="faq">
+                <div class="racing-style">
+                    <h6>FAQ'S</h6>
+                    <svg class="beside-border" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+                <h1>
+                    NEED GUIDANCE? WE'VE PROVIDED
+                </h1>
+                <p>
+                    Tortor Aliquam Nulla Facilisi Cras Fermentum Auctor 
+                    Augue Mauris Augue Neque Gravida In Fermentum.
+                </p>
+                <div class="view-more-btn">
+                    <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                    <a href="#">
+                        SHOP NOW
+                    </a>
+                    <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                        <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                        <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="faq-info">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- first -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ARE THERE GAMING CLUBS I CAN JOIN?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Varius duis at consectetur lorem donec. Tellus at urna condimentum mattis pellentesque id nibh tortor. Non sodales neque sodales ut etiam. Amet mauris commodo quis imperdiet massa tincidunt.</div>
+                    </div>
+                    </div>
+                    <!-- second -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            HOW DO I GET STARTED IN GAMING?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Sed enim ut sem viverra aliquet eget sit amet tellus. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus.</div>
+                    </div>
+                    </div>
+                    <!-- third -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ARE GAMING APPS FREE OR PAID?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Enim nec dui nunc mattis enim ut tellus. Et netus et malesuada fames ac. Cursus sit amet dictum sit amet justo. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris.Libero justo laoreet sit amet cursus sit amet dictum.</div>
+                        </div>
+                        </div>
+                    <!-- forth -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                HOW CAN I HONE MY GAMING TALENTS?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Magnis dis parturient montes nascetur ridiculus mus mauris. Eget gravida cum sociis natoque penatibus et magnis dis. Risus pretium quam vulputate dignissim.</div>
+                        </div>
+                        </div>
+                    
+                    <!-- fifth -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                WHERE CAN I FIND GAMING APPS?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Sed velit dignissim sodales ut eu sem integer vitae justo. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Urna et pharetra pharetra massa.</div>
+                        </div>
+                        </div>
+                    <!-- sixth -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ARE IN-APP PURCHASES SAFE?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Etiam sit amet nisl purus in mollis nunc sed. Tellus cras adipiscing enim eu turpis egestas. Gravida quis blandit turpis cursus in hac. Tincidunt eget nullam non nisi. Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- end -->
+                </div>
+            </div>
+        </section>
+        <!-- sec 9 -->
+        <section class="sec-no9">
+            <div class="offering">
+                <svg class="lying-left" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                    </svg>
+                <h6>
+                    OUR DIGITAL DIARY
+                </h6>
+                <svg class="lying-right" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                    <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                    <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                    </svg>
+            </div>
+            <h1>
+                EXPLORE OUR GAMING BLOG
+            </h1>
+            <div class="container-fluid row row-cols-1 row-cols-md-3">
+                <!-- card 1 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="card">
+                    <div class="img-overflow">
+                        <img src="images/blog-15.webp" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                    <h2 class="card-title">JOURNEYING THROUGH GAMING ANIMATION</h2>
+                    <p class="card-text">Neque sodales ut etiam sit amet.</p>
+                    <div class="shop-now-btn">
+                        <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                        <a href="#">
+                            READ MORE
+                        </a>
+                        <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="card">
+                    <div class="img-overflow">
+                        <img src="images/blog-14.webp" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                    <h2 class="card-title"> Exploring Animation Gaming Culture
+                    </h2>
+                    <p class="card-text">Ut venenatis tellus in metus.</p>
+                    <div class="shop-now-btn">
+                        <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                        <a href="#">
+                            READ MORE
+                        </a>
+                        <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="card">
+                    <div class="img-overflow">
+                        <img src="images/blog-13.webp" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                    <h2 class="card-title">
+                        Exploring Classic Game Gems
+                    </h2>
+                    <p class="card-text">In fermentum et sollicitudin ac orci.</p>
+                    <div class="shop-now-btn">
+                        <svg class="border-up" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                        <a href="#">
+                            READ MORE
+                        </a>
+                        <svg class="border-down" width="7" height="44" viewBox="0 0 7 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V44H4V19H3Z" fill="currentColor"/>
+                            <rect width="7" height="7" transform="matrix(1 0 0 -1 0 16)" fill="currentColor"/>
+                            <rect x="0.5" y="-0.5" width="6" height="6" transform="matrix(1 0 0 -1 0 6)" stroke="currentColor"/>
+                            </svg>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- sec 10 -->
+        <section class="sec-no10">
+            <div class="container-fluid row row-cols-1 row-cols-md-4">
+                <div class="col-2">
+                    <a href="#">
+                        <img src="images/Logo-1.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <img src="images/Logo-2.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <img src="images/Logo-3.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <img src="images/Logo-4.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <img src="images/Logo-5.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <img src="images/Logo-6.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End of main section -->
+    <!-- /////////////////// -->
+    <!-- footer -->
+    <footer>
+        <section class="footer-final-1">
+        <div class="container-lg container-md container">
+            <div class="footer-sec-no1">
+                <img src="images/footer-logo_1.webp" alt="">
+                <p>
+                    Sed libero odio, sollicitudin a porttitor ac, tempor eu nisi.
+                    Nulla sit amet suscipit dolormentum mauris in, rutrum augue.
+                </p>
+                <div class="getapp-btn">
+                    <a href="#">
+                        <img src="images/google-icon-1.webp" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/apple-icon.avif" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-sec-no2 ">
+                <div class="useful-links">
+                    <h5>
+                        USEFUL LINKS
+                    </h5>
+                    <ul>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="help-support">
+                    <h5>
+                        HELP & SUPPORT
+                    </h5>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Gift Card</a></li>
+                        <li><a href="#">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="resourses">
+                    <h5>
+                        RESOURCES
+                    </h5>
+                    <ul>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="container last-sec">
+            <div class="privacy-policy">
+                <a href="#" class="border-right-anchor">
+                    Terms&Conditions
+                </a>
+                <a href="#">
+                    Privacy Policy
+                </a>
+            </div>
+            <div class="copy-rights">
+                <p>
+                    All Right Reserved © 2024 <span>Designthemes</span>
+                </p>
+            </div>
+            <div class="social-icons">
+                <p>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter fa-xl" style="color: #ccff00;"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #ccff00;"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #ccff00;"></i>
+                    </a>
+                    
+                </p>
+                <p>
+                    <a href="#">
+                        <i class="fa-brands fa-snapchat fa-xl" style="color: #ccff00;"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <i class="fa-brands fa-vimeo-v fa-xl" style="color: #ccff00;"></i>
+                    </a>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+<!-- </div> -->
+</body>
+</html>
+<!-- <div class="inner-shop">
+                                <div class="shop-no1">
+                                <h5>
+                                    <a href="#">
+                                        CONTROLLERS
+                                    </a>
+                                </h5>
+                                <ol>
+                                    <li><a href="#">
+                                        Game Controller
+                                    </a></li>
+                                    <li><a href="#">
+                                    Gaming Joystick
+                                    </a></li>
+                                    <li><a href="#">
+                                    Zero Lag Gamepad
+                                    </a></li>
+                                    <li><a href="#">
+                                        Dual Analog Gamepad
+                                    </a></li>
+                                    <li><a href="#">
+                                        Wired Series Joystick
+                                    </a></li>
+                                    <li><a href="#">
+                                        LED Wireless Joystick
+                                    </a></li>
+                                </ol>
+                                </div>
+                                <div class="shop-no2">
+                                    <h5>
+                                        <a href="#">
+                                            KEYBOARDS
+                                        </a>
+                                    </h5>
+                                    <ol>
+                                        <li><a href="#">
+                                            Gaming Keyboard
+                                        </a></li>
+                                        <li><a href="#">
+                                            Multi Color Keyboard
+                                        </a></li>
+                                        <li><a href="#">
+                                            USB Cable Keyboard
+                                        </a></li>
+                                        <li><a href="#">
+                                            Classic Style Keyboard
+                                        </a></li>
+                                        <li><a href="#">
+                                            Lightweight Keyboard
+                                        </a></li>
+                                        <li><a href="#">
+                                            Wireless Keyboard
+                                        </a></li>
+                                    </ol>
+                                </div>
+                                <div class="shop-no3">
+                                    <h5>
+                                        <a href="#">
+                                            MOUSEPADS
+                                        </a>
+                                    </h5>
+                                    <ol>
+                                        <li><a href="#">
+                                            Gaming Mouse
+                                        </a></li>
+                                        <li><a href="#">
+                                            Wireless Mouse
+                                        </a></li>
+                                        <li><a href="#">
+                                            High Resolution Mouse
+                                        </a></li>
+                                        <li><a href="#">
+                                            Optical Wired Mouse
+                                        </a></li>
+                                        <li><a href="#">
+                                            RGB Lighting Mouse
+                                        </a></li>
+                                        <li><a href="#">
+                                            Wired Gaming Mouse
+                                        </a></li>
+                                    </ol>
+                                </div>
+                                <div class="shop-no4">
+                                    <h5>
+                                        <a href="#">
+                                            GAMING ACCESSORIES
+                                        </a>
+                                    </h5>
+                                    <ol>
+                                        <li><a href="#">
+                                            Gaming Chair
+                                        </a></li>
+                                        <li><a href="#">
+                                            Game Racing Chair
+                                        </a></li>
+                                        <li><a href="#">
+                                            Headphone With Mic
+                                        </a></li>
+                                        <li><a href="#">
+                                            Virtual Reality Headset
+                                        </a></li>
+                                        <li><a href="#">
+                                            Headset Controller
+                                        </a></li>
+                                        <li><a href="#">
+                                            Gaming Desk
+                                        </a></li>
+                                    </ol>
+                                </div>
+                            </div> -->
